@@ -11,9 +11,32 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Inertia\Response;
+use App\Models\User;
 
 class AuthenticatedSessionController extends Controller
 {
+
+    /**
+     * Display the login view.
+     */
+    public function generateSessionToken(Request $request)
+    {
+        if (!Auth::attempt($request->only('email', 'password'))) 
+        {
+            return response()
+                ->json(['message' => 'Unauthorized'], 401);
+        }
+
+        $user = User::where('email', $request['email'])->firstOrFail();
+
+        $token = $user->createToken('auth_token')->plainTextToken;
+
+        return response()
+            ->json([
+                'accessToken' => $token
+            ]);
+    }
+
     /**
      * Display the login view.
      */
