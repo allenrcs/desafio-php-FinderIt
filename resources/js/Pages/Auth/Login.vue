@@ -6,6 +6,7 @@ import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
+import axios from 'axios';
 
 defineProps({
     canResetPassword: Boolean,
@@ -13,12 +14,18 @@ defineProps({
 });
 
 const form = useForm({
-    email: '',
-    password: '',
+    email: 'yoda@example.com',
+    password: '12345678',
     remember: false,
 });
+    
 
-const submit = () => {
+const submit = async () => {
+    const response = await axios.get('/sanctum/token', {
+        params: {email: form.email, password: form.password}
+    });
+    localStorage.setItem('Token', response.data.accessToken);
+
     form.post(route('login'), {
         onFinish: () => form.reset('password'),
     });

@@ -64,4 +64,7 @@ return [
         'encrypt_cookies' => App\Http\Middleware\EncryptCookies::class,
     ],
 
+    'same_site' => 'none',
+    'secure' => env('SESSION_SECURE_COOKIE', true),
+
 ];
