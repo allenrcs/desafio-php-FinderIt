@@ -19,6 +19,7 @@
         credit: '',
         urlImage: ''
     })
+    // Object.assign(form, getInitialFormData())
 
     onMounted(() => {
         title.value = props.action === 'Add Book';
