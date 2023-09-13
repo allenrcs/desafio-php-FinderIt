@@ -1,11 +1,15 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import ModalFormBook from '@/Components/ModalFormBook.vue';
 import { Head } from '@inertiajs/vue3';
 import { onMounted, ref } from 'vue';
 import axios from 'axios';
 
 let books = ref([]);
+let bookSelected = ref({});
 
+
+// Llama a la API cuando se monta el componente
 onMounted(async () => {
   try {
     const response = await axios.get('/api/books');
@@ -15,6 +19,7 @@ onMounted(async () => {
     console.error('Error al obtener datos de la API', error);
   }
 });
+
 
 </script>
 
@@ -39,7 +44,7 @@ onMounted(async () => {
                 <div class="d-grid mx-auto">
                     <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalCreate">
                         <i class="fa-solid fa-circle-plus"></i>
-                        Add
+                        ADD
                     </button>
                 </div>
             </div>
@@ -70,5 +75,6 @@ onMounted(async () => {
                 </div>
             </div>
         </div>
+        <ModalFormBook :modal="'modalCreate'" :action="'create'" :book="bookSelected"></ModalFormBook>
     </AuthenticatedLayout>
 </template>
