@@ -1,6 +1,6 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 import axios from 'axios';
 
 defineProps({
@@ -10,9 +10,8 @@ defineProps({
     phpVersion: String,
 });
 
-
 const books = ref([]);
-
+const filter = ref('');
 
 onMounted(async () => {
     getBooks()  ;
@@ -20,14 +19,24 @@ onMounted(async () => {
 
 const getBooks = async () => {
     try {
-    const response = await axios.get('/api/books/details');
-    books.value = response.data.data;
-    console.log(books.value);
+        const response = await axios.get('/api/books/details');
+        books.value = response.data.data;
 
-  } catch (error) {
-    console.error('Error al obtener datos de la API', error);
-  }
+        if (filter.value) {
+            books.value = books.value.filter(book => book.user?.name.toLowerCase().includes(filter.value.toLowerCase()));
+        }
+    } catch (error) {
+        console.error('Error al obtener datos de la API', error);
+    }
 }
+
+const filteredBooks = computed(() => {
+    if (filter.value) {
+        return books.value.filter(book => book.user?.name.toLowerCase().includes(filter.value.toLowerCase()));
+    } else {
+        return books.value;
+    }
+});
 
 
 </script>
@@ -55,6 +64,7 @@ const getBooks = async () => {
 
         <div class="max-w-7xl mx-auto p-6 lg:p-8 mt-16">
                 <div class="table-responsive">
+                    <input type="text" v-model="filter" placeholder="Filter by author" class="filter-input" />
                     <table class="table table-stripeted table-bordered">
                         <thead>
                             <tr>
@@ -67,7 +77,7 @@ const getBooks = async () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="book in books" :key="book.id">
+                            <tr v-for="book in filteredBooks" :key="book.id">
                                 <td>
                                     <img :src="book.image_url" width="150" height="100">
                                 </td>
@@ -84,6 +94,11 @@ const getBooks = async () => {
 </template>
 
 <style>
+
+.filter-input {
+    margin-bottom: 1rem;
+}
+
 .bg-dots-darker {
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E");
 }
