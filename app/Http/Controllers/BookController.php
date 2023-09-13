@@ -9,12 +9,21 @@ use Illuminate\Http\Request;
 use App\Models\Book;
 use Illuminate\Support\Facades\Gate;
 
+/**
+ * @group Books
+ */
 class BookController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get books.
      *
-     * @return \Illuminate\Http\Response
+     * This endpoint provides a list of books
+     *
+     * @authenticated
+     *
+     * @queryParam user_id int Id user. Example: 1
+     *
+     * @return BookResource
      */
     public function index(Request $request)
     {
@@ -26,10 +35,18 @@ class BookController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create Book.
      *
-     * @param  \App\Http\Requests\StoreBookRequest  $request
-     * @return \Illuminate\Http\Response
+     * It returns the created book.
+     *
+     * @authenticated
+     *
+     * @BodyParam title string required Book title.
+     * @BodyParam description string required Description title.
+     * @BodyParam credit int required Credit title.
+     * @BodyParam image file required Cover image.
+     *
+     * @return BookResource
      */
     public function store(StoreBookRequest $request)
     {
@@ -46,11 +63,18 @@ class BookController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update Book.
      *
-     * @param  \App\Http\Requests\UpdateBookRequest  $request
-     * @param  \App\Models\Book  $book
-     * @return \Illuminate\Http\Response
+     * It returns the created book.
+     *
+     * @authenticated
+     *
+     * @BodyParam title string Book title.
+     * @BodyParam description string Description title.
+     * @BodyParam credit int Credit title.
+     * @BodyParam image file Cover image.
+     *
+     * @return BookResource
      */
     public function update(UpdateBookRequest $request, Book $book)
     {
@@ -73,10 +97,13 @@ class BookController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete book.
      *
-     * @param  \App\Models\Book  $book
-     * @return \Illuminate\Http\Response
+     * This endpoint deletes a book with the specified ID in the URL.
+     *
+     * @authenticated
+     *
+     * @return JsonResponse
      */
     public function destroy(Book $book)
     {

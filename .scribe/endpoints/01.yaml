@@ -1,0 +1,233 @@
+name: Books
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/books
+    metadata:
+      groupName: Books
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get books.'
+      description: 'This endpoint provides a list of books'
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      user_id:
+        name: user_id
+        description: 'Id user.'
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        custom: []
+    cleanQueryParameters:
+      user_id: 1
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/books
+    metadata:
+      groupName: Books
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Create Book.'
+      description: 'It returns the created book.'
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'Book title.'
+        required: true
+        example: enim
+        type: string
+        enumValues: []
+        custom: []
+      description:
+        name: description
+        description: 'Description title.'
+        required: true
+        example: 'Eveniet aliquid ut quae quae consequatur voluptatem praesentium.'
+        type: string
+        enumValues: []
+        custom: []
+      credit:
+        name: credit
+        description: 'Credit title.'
+        required: true
+        example: 18
+        type: integer
+        enumValues: []
+        custom: []
+      image:
+        name: image
+        description: 'Cover image.'
+        required: true
+        example: null
+        type: file
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      title: enim
+      description: 'Eveniet aliquid ut quae quae consequatur voluptatem praesentium.'
+      credit: 18
+    fileParameters:
+      image: null
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+    uri: 'api/books/{book_id}'
+    metadata:
+      groupName: Books
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update Book.'
+      description: 'It returns the created book.'
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters:
+      book_id:
+        name: book_id
+        description: 'The ID of the book.'
+        required: true
+        example: 3
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      book_id: 3
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'Book title.'
+        required: false
+        example: sed
+        type: string
+        enumValues: []
+        custom: []
+      description:
+        name: description
+        description: 'Description title.'
+        required: false
+        example: 'Eveniet consequuntur consequatur sunt omnis nulla.'
+        type: string
+        enumValues: []
+        custom: []
+      credit:
+        name: credit
+        description: 'Credit title.'
+        required: false
+        example: 2
+        type: integer
+        enumValues: []
+        custom: []
+      image:
+        name: image
+        description: 'Cover image.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      title: sed
+      description: 'Eveniet consequuntur consequatur sunt omnis nulla.'
+      credit: 2
+    fileParameters:
+      image: null
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/books/{book_id}'
+    metadata:
+      groupName: Books
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete book.'
+      description: 'This endpoint deletes a book with the specified ID in the URL.'
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      book_id:
+        name: book_id
+        description: 'The ID of the book.'
+        required: true
+        example: 3
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      book_id: 3
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
