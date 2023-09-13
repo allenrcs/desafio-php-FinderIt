@@ -23,6 +23,8 @@ class BookResource extends JsonResource
             'image_url' => $this->image_url,
             'user_id' => $this->user_id,
             'user' => $this->whenLoaded('user'),
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ];
     }
 }
