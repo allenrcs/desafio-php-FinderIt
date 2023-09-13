@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\BookResource;
 use App\Http\Requests\StoreBookRequest;
 use App\Http\Requests\UpdateBookRequest;
+use Illuminate\Http\Request;
 use App\Models\Book;
+use Illuminate\Support\Facades\Gate;
 
 class BookController extends Controller
 {
@@ -13,19 +16,13 @@ class BookController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        $books = Book::with('user')->get();
+        if ($request->user_id) {
+            $books = $books->where('user_id', $request->user_id);
+        }
+        return BookResource::collection($books);
     }
 
     /**
@@ -36,29 +33,16 @@ class BookController extends Controller
      */
     public function store(StoreBookRequest $request)
     {
-        //
-    }
+        $data = $request->validated();
+        $data['user_id'] = $request->user()->id;
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Book  $book
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Book $book)
-    {
-        //
-    }
+        if ($request->hasFile('image')) {
+            $data['image'] = $this->uploadImage($request->file('image'));
+        }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Book  $book
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Book $book)
-    {
-        //
+        $book = Book::create($data);
+
+        return new BookResource($book);
     }
 
     /**
@@ -82,5 +66,14 @@ class BookController extends Controller
     public function destroy(Book $book)
     {
         //
+    }
+
+    private function uploadImage($image)
+    {
+        $imageName = time() . '.' . $image->getClientOriginalExtension();
+        $imagePath = public_path('images/books/');
+        $image->move($imagePath, $imageName);
+
+        return $imageName;
     }
 }

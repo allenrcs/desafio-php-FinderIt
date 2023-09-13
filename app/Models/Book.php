@@ -19,7 +19,14 @@ class Book extends Model
         'user_id',
     ];
 
+    protected $appends = ['image_url'];
+
     public function user() {
         return $this->belongsTo('App\Models\User', 'user_id');
+    }
+
+    public function getImageUrlAttribute()
+    {
+        return asset('images/books/' . $this->image);
     }
 }
