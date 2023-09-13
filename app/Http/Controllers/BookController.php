@@ -17,20 +17,18 @@ class BookController extends Controller
     /**
      * Get books.
      *
-     * This endpoint provides a list of books
+     * this endpoint provides the books of a user
      *
      * @authenticated
-     *
-     * @queryParam user_id int Id user. Example: 1
      *
      * @return BookResource
      */
     public function index(Request $request)
     {
-        $books = Book::with('user')->get();
-        if ($request->user_id) {
-            $books = $books->where('user_id', $request->user_id);
-        }
+        $userId = $request->user()->id;
+
+        $books = Book::getBooksByUser($userId);
+
         return BookResource::collection($books);
     }
 
@@ -100,8 +98,6 @@ class BookController extends Controller
      */
     public function update(UpdateBookRequest $request, Book $book)
     {
-        $data = $request->validated();
-
         $data = $request->validated();
 
         $book->update($data);

@@ -29,4 +29,11 @@ class Book extends Model
     {
         return asset('images/books/' . $this->image);
     }
+
+    public static function getBooksByUser($userId)
+    {
+        return self::where('user_id', $userId)
+            ->with('user')
+            ->get();
+    }
 }
