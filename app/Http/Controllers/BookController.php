@@ -54,7 +54,22 @@ class BookController extends Controller
      */
     public function update(UpdateBookRequest $request, Book $book)
     {
-        //
+        $data = $request->validated();
+
+        $data = $request->validated();
+
+        $book->update($data);
+
+        if ($request->hasFile('image')) {
+            if ($book->image) {
+                $this->deleteImage($book->image);
+            }
+
+            $data['image'] = $this->uploadImage($request->file('image'));
+            $book->update($data);
+        }
+
+        return new BookResource($book);
     }
 
     /**
@@ -65,7 +80,12 @@ class BookController extends Controller
      */
     public function destroy(Book $book)
     {
-        //
+        if (Gate::allows('delete', $book)) {
+            $book->delete();
+            return response()->json(['message' => 'Book deleted successfully']);
+        } else {
+            return response()->json(['message' => 'You do not have permission to delete this book'], 403);
+        }
     }
 
     private function uploadImage($image)
@@ -76,4 +96,18 @@ class BookController extends Controller
 
         return $imageName;
     }
+
+    private function deleteImage($imageName)
+    {
+        $imagePath = public_path('images/books/');
+
+        $imageFullPath = $imagePath . $imageName;
+
+        if (file_exists($imageFullPath)) {
+            unlink($imageFullPath);
+
+            $book->update(['image' => null]);
+        }
+    }
+
 }
