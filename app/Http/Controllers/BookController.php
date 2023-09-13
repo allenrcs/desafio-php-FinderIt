@@ -35,6 +35,28 @@ class BookController extends Controller
     }
 
     /**
+     * Get published books.
+     *
+     * This endpoint provides a list of published books
+     *
+     * @return BookResource
+     */
+    public function getBooksDetails(Request $request)
+    {
+        $books = Book::query()->with('user');
+
+        if ($request->title) {
+            $books->where('title', 'LIKE', $request->title);
+        }
+
+        if ($request->user_id) {
+            $books->where('user_id', $request->user_id);
+        }
+
+        return BookResource::collection($books->get());
+    }
+
+    /**
      * Create Book.
      *
      * It returns the created book.
