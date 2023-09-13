@@ -83,6 +83,9 @@
                                                                                 <li class="tocify-item level-2" data-unique="books-DELETEapi-books--book_id-">
                                 <a href="#books-DELETEapi-books--book_id-">Delete book.</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="books-GETapi-books-details">
+                                <a href="#books-GETapi-books-details">Get published books.</a>
+                            </li>
                                                                         </ul>
                             </ul>
                     <ul id="tocify-header-endpoints" class="tocify-header">
@@ -179,12 +182,89 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
-access-control-allow-origin: *
+x-ratelimit-remaining: 58
+vary: Origin
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: []
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 5,
+            &quot;title&quot;: &quot;Modi sunt nesciunt.&quot;,
+            &quot;description&quot;: &quot;Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.&quot;,
+            &quot;credit&quot;: 1000,
+            &quot;image&quot;: &quot;1694616074.jpg&quot;,
+            &quot;image_url&quot;: &quot;http://localhost/images/books/1694616074.jpg&quot;,
+            &quot;user_id&quot;: 1,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Yoda&quot;,
+                &quot;email&quot;: &quot;yoda@example.com&quot;,
+                &quot;email_verified_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;
+            },
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;title&quot;: &quot;Nihil vitae veniam.&quot;,
+            &quot;description&quot;: &quot;Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.&quot;,
+            &quot;credit&quot;: 1000,
+            &quot;image&quot;: &quot;1694616076.jpg&quot;,
+            &quot;image_url&quot;: &quot;http://localhost/images/books/1694616076.jpg&quot;,
+            &quot;user_id&quot;: 1,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Yoda&quot;,
+                &quot;email&quot;: &quot;yoda@example.com&quot;,
+                &quot;email_verified_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;
+            },
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;title&quot;: &quot;Soluta autem.&quot;,
+            &quot;description&quot;: &quot;Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.&quot;,
+            &quot;credit&quot;: 1000,
+            &quot;image&quot;: &quot;1694616077.jpg&quot;,
+            &quot;image_url&quot;: &quot;http://localhost/images/books/1694616077.jpg&quot;,
+            &quot;user_id&quot;: 1,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Yoda&quot;,
+                &quot;email&quot;: &quot;yoda@example.com&quot;,
+                &quot;email_verified_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;
+            },
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;title&quot;: &quot;Ratione fuga non.&quot;,
+            &quot;description&quot;: &quot;Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.&quot;,
+            &quot;credit&quot;: 1000,
+            &quot;image&quot;: &quot;1694616078.jpg&quot;,
+            &quot;image_url&quot;: &quot;http://localhost/images/books/1694616078.jpg&quot;,
+            &quot;user_id&quot;: 1,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Yoda&quot;,
+                &quot;email&quot;: &quot;yoda@example.com&quot;,
+                &quot;email_verified_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;
+            },
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: null
+        }
+    ]
 }</code>
  </pre>
     </span>
@@ -288,10 +368,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     "http://localhost/api/books" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "title=enim"\
-    --form "description=Eveniet aliquid ut quae quae consequatur voluptatem praesentium."\
-    --form "credit=18"\
-    --form "image=@/private/var/folders/_9/7jj6bsk14kjb_x4rfwxlwdn40000gn/T/phpiW0eao" </code></pre></div>
+    --form "title=nihil"\
+    --form "description=Ab et provident quia autem consequatur."\
+    --form "credit=16"\
+    --form "image=@/private/var/folders/_9/7jj6bsk14kjb_x4rfwxlwdn40000gn/T/phpfmIwOy" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -305,9 +385,9 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('title', 'enim');
-body.append('description', 'Eveniet aliquid ut quae quae consequatur voluptatem praesentium.');
-body.append('credit', '18');
+body.append('title', 'nihil');
+body.append('description', 'Ab et provident quia autem consequatur.');
+body.append('credit', '16');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -396,10 +476,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-books"
-               value="enim"
+               value="nihil"
                data-component="body">
     <br>
-<p>Book title. Example: <code>enim</code></p>
+<p>Book title. Example: <code>nihil</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -407,10 +487,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-books"
-               value="Eveniet aliquid ut quae quae consequatur voluptatem praesentium."
+               value="Ab et provident quia autem consequatur."
                data-component="body">
     <br>
-<p>Description title. Example: <code>Eveniet aliquid ut quae quae consequatur voluptatem praesentium.</code></p>
+<p>Description title. Example: <code>Ab et provident quia autem consequatur.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>credit</code></b>&nbsp;&nbsp;
@@ -418,10 +498,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="credit"                data-endpoint="POSTapi-books"
-               value="18"
+               value="16"
                data-component="body">
     <br>
-<p>Credit title. Example: <code>18</code></p>
+<p>Credit title. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -432,7 +512,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Cover image. Example: <code>/private/var/folders/_9/7jj6bsk14kjb_x4rfwxlwdn40000gn/T/phpiW0eao</code></p>
+<p>Cover image. Example: <code>/private/var/folders/_9/7jj6bsk14kjb_x4rfwxlwdn40000gn/T/phpfmIwOy</code></p>
         </div>
         </form>
 
@@ -450,18 +530,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/books/3" \
+    "http://localhost/api/books/5" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "title=sed"\
-    --form "description=Eveniet consequuntur consequatur sunt omnis nulla."\
-    --form "credit=2"\
-    --form "image=@/private/var/folders/_9/7jj6bsk14kjb_x4rfwxlwdn40000gn/T/phpAqvtrU" </code></pre></div>
+    --form "title=praesentium"\
+    --form "description=Consequatur sit non quod voluptatem."\
+    --form "credit=6"\
+    --form "image=@/private/var/folders/_9/7jj6bsk14kjb_x4rfwxlwdn40000gn/T/phpQm3KQa" </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/books/3"
+    "http://localhost/api/books/5"
 );
 
 const headers = {
@@ -470,9 +550,9 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('title', 'sed');
-body.append('description', 'Eveniet consequuntur consequatur sunt omnis nulla.');
-body.append('credit', '2');
+body.append('title', 'praesentium');
+body.append('description', 'Consequatur sit non quod voluptatem.');
+body.append('credit', '6');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -561,10 +641,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="book_id"                data-endpoint="PUTapi-books--book_id-"
-               value="3"
+               value="5"
                data-component="url">
     <br>
-<p>The ID of the book. Example: <code>3</code></p>
+<p>The ID of the book. Example: <code>5</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -573,10 +653,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="PUTapi-books--book_id-"
-               value="sed"
+               value="praesentium"
                data-component="body">
     <br>
-<p>Book title. Example: <code>sed</code></p>
+<p>Book title. Example: <code>praesentium</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -584,10 +664,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="PUTapi-books--book_id-"
-               value="Eveniet consequuntur consequatur sunt omnis nulla."
+               value="Consequatur sit non quod voluptatem."
                data-component="body">
     <br>
-<p>Description title. Example: <code>Eveniet consequuntur consequatur sunt omnis nulla.</code></p>
+<p>Description title. Example: <code>Consequatur sit non quod voluptatem.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>credit</code></b>&nbsp;&nbsp;
@@ -595,10 +675,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="credit"                data-endpoint="PUTapi-books--book_id-"
-               value="2"
+               value="6"
                data-component="body">
     <br>
-<p>Credit title. Example: <code>2</code></p>
+<p>Credit title. Example: <code>6</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -609,7 +689,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Cover image. Example: <code>/private/var/folders/_9/7jj6bsk14kjb_x4rfwxlwdn40000gn/T/phpAqvtrU</code></p>
+<p>Cover image. Example: <code>/private/var/folders/_9/7jj6bsk14kjb_x4rfwxlwdn40000gn/T/phpQm3KQa</code></p>
         </div>
         </form>
 
@@ -627,14 +707,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/books/3" \
+    "http://localhost/api/books/5" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/books/3"
+    "http://localhost/api/books/5"
 );
 
 const headers = {
@@ -727,12 +807,215 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="book_id"                data-endpoint="DELETEapi-books--book_id-"
-               value="3"
+               value="5"
                data-component="url">
     <br>
-<p>The ID of the book. Example: <code>3</code></p>
+<p>The ID of the book. Example: <code>5</code></p>
             </div>
                     </form>
+
+                    <h2 id="books-GETapi-books-details">Get published books.</h2>
+
+<p>
+</p>
+
+<p>This endpoint provides a list of published books</p>
+
+<span id="example-requests-GETapi-books-details">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/books/details" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/books/details"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-books-details">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 57
+vary: Origin
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 5,
+            &quot;title&quot;: &quot;Modi sunt nesciunt.&quot;,
+            &quot;description&quot;: &quot;Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.&quot;,
+            &quot;credit&quot;: 1000,
+            &quot;image&quot;: &quot;1694616074.jpg&quot;,
+            &quot;image_url&quot;: &quot;http://localhost/images/books/1694616074.jpg&quot;,
+            &quot;user_id&quot;: 1,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Yoda&quot;,
+                &quot;email&quot;: &quot;yoda@example.com&quot;,
+                &quot;email_verified_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;
+            },
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;title&quot;: &quot;Nihil vitae veniam.&quot;,
+            &quot;description&quot;: &quot;Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.&quot;,
+            &quot;credit&quot;: 1000,
+            &quot;image&quot;: &quot;1694616076.jpg&quot;,
+            &quot;image_url&quot;: &quot;http://localhost/images/books/1694616076.jpg&quot;,
+            &quot;user_id&quot;: 1,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Yoda&quot;,
+                &quot;email&quot;: &quot;yoda@example.com&quot;,
+                &quot;email_verified_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;
+            },
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;title&quot;: &quot;Soluta autem.&quot;,
+            &quot;description&quot;: &quot;Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.&quot;,
+            &quot;credit&quot;: 1000,
+            &quot;image&quot;: &quot;1694616077.jpg&quot;,
+            &quot;image_url&quot;: &quot;http://localhost/images/books/1694616077.jpg&quot;,
+            &quot;user_id&quot;: 1,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Yoda&quot;,
+                &quot;email&quot;: &quot;yoda@example.com&quot;,
+                &quot;email_verified_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;
+            },
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: null
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;title&quot;: &quot;Ratione fuga non.&quot;,
+            &quot;description&quot;: &quot;Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.&quot;,
+            &quot;credit&quot;: 1000,
+            &quot;image&quot;: &quot;1694616078.jpg&quot;,
+            &quot;image_url&quot;: &quot;http://localhost/images/books/1694616078.jpg&quot;,
+            &quot;user_id&quot;: 1,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Yoda&quot;,
+                &quot;email&quot;: &quot;yoda@example.com&quot;,
+                &quot;email_verified_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-09-13T15:43:38.000000Z&quot;
+            },
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: null
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-books-details" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-books-details"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-books-details"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-books-details" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-books-details">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-books-details" data-method="GET"
+      data-path="api/books/details"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-books-details', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-books-details"
+                    onclick="tryItOut('GETapi-books-details');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-books-details"
+                    onclick="cancelTryOut('GETapi-books-details');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-books-details"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/books/details</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-books-details"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-books-details"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
 
                 <h1 id="endpoints">Endpoints</h1>
 
@@ -783,7 +1066,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-access-control-allow-origin: *
+vary: Origin
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{

@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "f684b16a-dd76-4560-a099-612367860c63",
+        "_postman_id": "db2ca687-b9de-421f-a5f0-f364fadfc307",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -66,15 +66,15 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "59"
+                                    "value": "58"
                                 },
                                 {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
+                                    "key": "vary",
+                                    "value": "Origin"
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":[]}",
+                            "body": "{\"data\":[{\"id\":5,\"title\":\"Modi sunt nesciunt.\",\"description\":\"Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.\",\"credit\":1000,\"image\":\"1694616074.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616074.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":6,\"title\":\"Nihil vitae veniam.\",\"description\":\"Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.\",\"credit\":1000,\"image\":\"1694616076.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616076.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":7,\"title\":\"Soluta autem.\",\"description\":\"Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.\",\"credit\":1000,\"image\":\"1694616077.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616077.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":8,\"title\":\"Ratione fuga non.\",\"description\":\"Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.\",\"credit\":1000,\"image\":\"1694616078.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616078.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null}]}",
                             "name": ""
                         }
                     ]
@@ -104,19 +104,19 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "enim",
+                                    "value": "nihil",
                                     "type": "text",
                                     "description": "Book title."
                                 },
                                 {
                                     "key": "description",
-                                    "value": "Eveniet aliquid ut quae quae consequatur voluptatem praesentium.",
+                                    "value": "Ab et provident quia autem consequatur.",
                                     "type": "text",
                                     "description": "Description title."
                                 },
                                 {
                                     "key": "credit",
-                                    "value": 18,
+                                    "value": 16,
                                     "type": "text",
                                     "description": "Credit title."
                                 },
@@ -143,7 +143,7 @@
                                 {
                                     "id": "book_id",
                                     "key": "book_id",
-                                    "value": "3",
+                                    "value": "5",
                                     "description": "The ID of the book."
                                 }
                             ]
@@ -164,19 +164,19 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "sed",
+                                    "value": "praesentium",
                                     "type": "text",
                                     "description": "Book title."
                                 },
                                 {
                                     "key": "description",
-                                    "value": "Eveniet consequuntur consequatur sunt omnis nulla.",
+                                    "value": "Consequatur sit non quod voluptatem.",
                                     "type": "text",
                                     "description": "Description title."
                                 },
                                 {
                                     "key": "credit",
-                                    "value": 2,
+                                    "value": 6,
                                     "type": "text",
                                     "description": "Credit title."
                                 },
@@ -208,7 +208,7 @@
                                 {
                                     "id": "book_id",
                                     "key": "book_id",
-                                    "value": "3",
+                                    "value": "5",
                                     "description": "The ID of the book."
                                 }
                             ]
@@ -228,6 +228,62 @@
                         "description": "This endpoint deletes a book with the specified ID in the URL."
                     },
                     "response": []
+                },
+                {
+                    "name": "Get published books.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/books\/details",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/books\/details"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint provides a list of published books",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":5,\"title\":\"Modi sunt nesciunt.\",\"description\":\"Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.\",\"credit\":1000,\"image\":\"1694616074.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616074.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":6,\"title\":\"Nihil vitae veniam.\",\"description\":\"Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.\",\"credit\":1000,\"image\":\"1694616076.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616076.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":7,\"title\":\"Soluta autem.\",\"description\":\"Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.\",\"credit\":1000,\"image\":\"1694616077.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616077.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":8,\"title\":\"Ratione fuga non.\",\"description\":\"Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.\",\"credit\":1000,\"image\":\"1694616078.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616078.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null}]}",
+                            "name": ""
+                        }
+                    ]
                 }
             ]
         },
@@ -273,8 +329,8 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
+                                    "key": "vary",
+                                    "value": "Origin"
                                 }
                             ],
                             "code": 401,
