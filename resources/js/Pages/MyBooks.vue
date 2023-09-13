@@ -107,5 +107,6 @@ const destroy = (id,name) =>{
             </div>
         </div>
         <ModalFormBook :modal="'modalCreate'" :action="'create'" :book="bookSelected"></ModalFormBook>
+        <ModalFormBook :modal="'modalEdit'" :action="'update'" :book="bookSelected"></ModalFormBook>
     </AuthenticatedLayout>
 </template>

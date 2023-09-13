@@ -19,10 +19,9 @@
         credit: '',
         urlImage: ''
     })
-    // Object.assign(form, getInitialFormData())
 
     onMounted(() => {
-        title.value = props.action === 'Add Book';
+        title.value = props.action === 'create' ? 'Add Book' : 'Update Book';
     });
 
     watch(() => props.book, (first, second) => {
@@ -52,6 +51,21 @@
         location.reload();
     }
 
+    const update = async () => {
+      try {
+        await axios.put(`/api/books/${form.id}`, {
+          id: form.id,
+          title: form.title,
+          description: form.description,
+          credit: form.credit,
+          urlImage: form.urlImage
+        });
+        location.reload();
+      } catch (error) {
+        console.error('Error updating the book:', error);
+      }
+    }
+
     const close = () => {
         form.reset();
         document.querySelector('#close'+props.action).click();
@@ -73,7 +87,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form @submit.prevent="save()">
+                    <form @submit.prevent="(action === 'create' ? save() : update())">
                         <TextInput :id="'id'+action" type="hidden" name="id" v-model="form.id">
                         </TextInput>
                         <div class="input-group mb-3">
