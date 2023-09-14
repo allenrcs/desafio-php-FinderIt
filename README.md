@@ -49,3 +49,8 @@ Iniciar servidor de desarrollo
 php artisan serve
 ```
 
+Url Documentación
+
+```bash
+BaseUrl/docs 
+```

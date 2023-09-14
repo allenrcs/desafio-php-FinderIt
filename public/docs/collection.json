@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "db2ca687-b9de-421f-a5f0-f364fadfc307",
+        "_postman_id": "6d0ada9a-5208-480c-80c5-65ab6ea2aef3",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -47,7 +47,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "This endpoint provides a list of books"
+                        "description": "this endpoint provides the books of a user"
                     },
                     "response": [
                         {
@@ -66,7 +66,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "58"
+                                    "value": "56"
                                 },
                                 {
                                     "key": "vary",
@@ -74,7 +74,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":[{\"id\":5,\"title\":\"Modi sunt nesciunt.\",\"description\":\"Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.\",\"credit\":1000,\"image\":\"1694616074.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616074.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":6,\"title\":\"Nihil vitae veniam.\",\"description\":\"Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.\",\"credit\":1000,\"image\":\"1694616076.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616076.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":7,\"title\":\"Soluta autem.\",\"description\":\"Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.\",\"credit\":1000,\"image\":\"1694616077.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616077.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":8,\"title\":\"Ratione fuga non.\",\"description\":\"Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.\",\"credit\":1000,\"image\":\"1694616078.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616078.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null}]}",
+                            "body": "{\"data\":[{\"id\":1,\"title\":\"Sunt assumenda.\",\"description\":\"Quis quaerat voluptatem est natus fugiat. Quia qui at officiis aut nihil unde laudantium. Itaque facilis nulla tempore eveniet atque sint. Aut ea nobis laudantium voluptatum.\",\"credit\":1000,\"image\":\"1694616074.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616074.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-14T05:46:24.000000Z\",\"created_at\":\"2023-09-14T05:46:24.000000Z\",\"updated_at\":\"2023-09-14T05:46:24.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":2,\"title\":\"Inventore officia.\",\"description\":\"Ut rerum harum dignissimos qui. Iusto laborum culpa cumque maiores magnam. Velit quis dignissimos sed voluptatibus tempore quas illo.\",\"credit\":1000,\"image\":\"1694616076.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616076.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-14T05:46:24.000000Z\",\"created_at\":\"2023-09-14T05:46:24.000000Z\",\"updated_at\":\"2023-09-14T05:46:24.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":3,\"title\":\"Iste pariatur.\",\"description\":\"Quidem voluptas inventore in. Est enim quia ut voluptatem. Deleniti quibusdam aliquam quia est. Consectetur in consequatur ratione sed et.\",\"credit\":1000,\"image\":\"1694616077.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616077.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-14T05:46:24.000000Z\",\"created_at\":\"2023-09-14T05:46:24.000000Z\",\"updated_at\":\"2023-09-14T05:46:24.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":4,\"title\":\"Et eos ut assumenda.\",\"description\":\"Aperiam rerum iusto asperiores aut iste ipsam sed quis. Eveniet sunt ipsum voluptatem voluptatem.\",\"credit\":1000,\"image\":\"1694616078.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616078.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-14T05:46:24.000000Z\",\"created_at\":\"2023-09-14T05:46:24.000000Z\",\"updated_at\":\"2023-09-14T05:46:24.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":5,\"title\":\"qweqwe\",\"description\":\"qweqwe\",\"credit\":12222,\"image\":\"1694670411.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694670411.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-14T05:46:24.000000Z\",\"created_at\":\"2023-09-14T05:46:24.000000Z\",\"updated_at\":\"2023-09-14T05:46:24.000000Z\"},\"created_at\":\"2023-09-14T05:46:51.000000Z\",\"updated_at\":\"2023-09-14T05:46:51.000000Z\"}]}",
                             "name": ""
                         }
                     ]
@@ -104,21 +104,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "nihil",
+                                    "value": "velit",
                                     "type": "text",
                                     "description": "Book title."
                                 },
                                 {
                                     "key": "description",
-                                    "value": "Ab et provident quia autem consequatur.",
+                                    "value": "Sit et repellendus est vero debitis vel sed qui.",
                                     "type": "text",
                                     "description": "Description title."
                                 },
                                 {
                                     "key": "credit",
-                                    "value": 16,
+                                    "value": 13,
                                     "type": "text",
                                     "description": "Credit title."
+                                },
+                                {
+                                    "key": "user_id",
+                                    "value": 9,
+                                    "type": "text",
+                                    "description": "Id user."
                                 },
                                 {
                                     "key": "image",
@@ -143,7 +149,7 @@
                                 {
                                     "id": "book_id",
                                     "key": "book_id",
-                                    "value": "5",
+                                    "value": "1",
                                     "description": "The ID of the book."
                                 }
                             ]
@@ -164,19 +170,19 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "praesentium",
+                                    "value": "at",
                                     "type": "text",
                                     "description": "Book title."
                                 },
                                 {
                                     "key": "description",
-                                    "value": "Consequatur sit non quod voluptatem.",
+                                    "value": "Harum sunt vitae impedit voluptates.",
                                     "type": "text",
                                     "description": "Description title."
                                 },
                                 {
                                     "key": "credit",
-                                    "value": 6,
+                                    "value": 12,
                                     "type": "text",
                                     "description": "Credit title."
                                 },
@@ -208,7 +214,7 @@
                                 {
                                     "id": "book_id",
                                     "key": "book_id",
-                                    "value": "5",
+                                    "value": "1",
                                     "description": "The ID of the book."
                                 }
                             ]
@@ -272,7 +278,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "57"
+                                    "value": "55"
                                 },
                                 {
                                     "key": "vary",
@@ -280,7 +286,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":[{\"id\":5,\"title\":\"Modi sunt nesciunt.\",\"description\":\"Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.\",\"credit\":1000,\"image\":\"1694616074.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616074.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":6,\"title\":\"Nihil vitae veniam.\",\"description\":\"Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.\",\"credit\":1000,\"image\":\"1694616076.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616076.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":7,\"title\":\"Soluta autem.\",\"description\":\"Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.\",\"credit\":1000,\"image\":\"1694616077.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616077.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":8,\"title\":\"Ratione fuga non.\",\"description\":\"Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.\",\"credit\":1000,\"image\":\"1694616078.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616078.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-13T15:43:38.000000Z\",\"created_at\":\"2023-09-13T15:43:38.000000Z\",\"updated_at\":\"2023-09-13T15:43:38.000000Z\"},\"created_at\":null,\"updated_at\":null}]}",
+                            "body": "{\"data\":[{\"id\":1,\"title\":\"Sunt assumenda.\",\"description\":\"Quis quaerat voluptatem est natus fugiat. Quia qui at officiis aut nihil unde laudantium. Itaque facilis nulla tempore eveniet atque sint. Aut ea nobis laudantium voluptatum.\",\"credit\":1000,\"image\":\"1694616074.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616074.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-14T05:46:24.000000Z\",\"created_at\":\"2023-09-14T05:46:24.000000Z\",\"updated_at\":\"2023-09-14T05:46:24.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":2,\"title\":\"Inventore officia.\",\"description\":\"Ut rerum harum dignissimos qui. Iusto laborum culpa cumque maiores magnam. Velit quis dignissimos sed voluptatibus tempore quas illo.\",\"credit\":1000,\"image\":\"1694616076.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616076.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-14T05:46:24.000000Z\",\"created_at\":\"2023-09-14T05:46:24.000000Z\",\"updated_at\":\"2023-09-14T05:46:24.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":3,\"title\":\"Iste pariatur.\",\"description\":\"Quidem voluptas inventore in. Est enim quia ut voluptatem. Deleniti quibusdam aliquam quia est. Consectetur in consequatur ratione sed et.\",\"credit\":1000,\"image\":\"1694616077.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616077.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-14T05:46:24.000000Z\",\"created_at\":\"2023-09-14T05:46:24.000000Z\",\"updated_at\":\"2023-09-14T05:46:24.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":4,\"title\":\"Et eos ut assumenda.\",\"description\":\"Aperiam rerum iusto asperiores aut iste ipsam sed quis. Eveniet sunt ipsum voluptatem voluptatem.\",\"credit\":1000,\"image\":\"1694616078.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694616078.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-14T05:46:24.000000Z\",\"created_at\":\"2023-09-14T05:46:24.000000Z\",\"updated_at\":\"2023-09-14T05:46:24.000000Z\"},\"created_at\":null,\"updated_at\":null},{\"id\":5,\"title\":\"qweqwe\",\"description\":\"qweqwe\",\"credit\":12222,\"image\":\"1694670411.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694670411.jpg\",\"user_id\":1,\"user\":{\"id\":1,\"name\":\"Yoda\",\"email\":\"yoda@example.com\",\"email_verified_at\":\"2023-09-14T05:46:24.000000Z\",\"created_at\":\"2023-09-14T05:46:24.000000Z\",\"updated_at\":\"2023-09-14T05:46:24.000000Z\"},\"created_at\":\"2023-09-14T05:46:51.000000Z\",\"updated_at\":\"2023-09-14T05:46:51.000000Z\"},{\"id\":9,\"title\":\"aaaaa\",\"description\":\"aaaa\",\"credit\":123,\"image\":\"1694671530.jpg\",\"image_url\":\"http:\\\/\\\/localhost\\\/images\\\/books\\\/1694671530.jpg\",\"user_id\":3,\"user\":{\"id\":3,\"name\":\"allen\",\"email\":\"allen@example.com\",\"email_verified_at\":null,\"created_at\":\"2023-09-14T06:04:47.000000Z\",\"updated_at\":\"2023-09-14T06:04:47.000000Z\"},\"created_at\":\"2023-09-14T06:05:30.000000Z\",\"updated_at\":\"2023-09-14T06:05:36.000000Z\"}]}",
                             "name": ""
                         }
                     ]

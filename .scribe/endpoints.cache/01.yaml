@@ -13,7 +13,7 @@ endpoints:
       subgroup: ''
       subgroupDescription: ''
       title: 'Get books.'
-      description: 'This endpoint provides a list of books'
+      description: 'this endpoint provides the books of a user'
       authenticated: true
       custom: []
     headers:
@@ -38,12 +38,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":5,"title":"Modi sunt nesciunt.","description":"Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.","credit":1000,"image":"1694616074.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616074.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-13T15:43:38.000000Z","created_at":"2023-09-13T15:43:38.000000Z","updated_at":"2023-09-13T15:43:38.000000Z"},"created_at":null,"updated_at":null},{"id":6,"title":"Nihil vitae veniam.","description":"Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.","credit":1000,"image":"1694616076.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616076.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-13T15:43:38.000000Z","created_at":"2023-09-13T15:43:38.000000Z","updated_at":"2023-09-13T15:43:38.000000Z"},"created_at":null,"updated_at":null},{"id":7,"title":"Soluta autem.","description":"Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.","credit":1000,"image":"1694616077.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616077.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-13T15:43:38.000000Z","created_at":"2023-09-13T15:43:38.000000Z","updated_at":"2023-09-13T15:43:38.000000Z"},"created_at":null,"updated_at":null},{"id":8,"title":"Ratione fuga non.","description":"Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.","credit":1000,"image":"1694616078.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616078.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-13T15:43:38.000000Z","created_at":"2023-09-13T15:43:38.000000Z","updated_at":"2023-09-13T15:43:38.000000Z"},"created_at":null,"updated_at":null}]}'
+        content: '{"data":[{"id":1,"title":"Sunt assumenda.","description":"Quis quaerat voluptatem est natus fugiat. Quia qui at officiis aut nihil unde laudantium. Itaque facilis nulla tempore eveniet atque sint. Aut ea nobis laudantium voluptatum.","credit":1000,"image":"1694616074.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616074.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-14T05:46:24.000000Z","created_at":"2023-09-14T05:46:24.000000Z","updated_at":"2023-09-14T05:46:24.000000Z"},"created_at":null,"updated_at":null},{"id":2,"title":"Inventore officia.","description":"Ut rerum harum dignissimos qui. Iusto laborum culpa cumque maiores magnam. Velit quis dignissimos sed voluptatibus tempore quas illo.","credit":1000,"image":"1694616076.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616076.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-14T05:46:24.000000Z","created_at":"2023-09-14T05:46:24.000000Z","updated_at":"2023-09-14T05:46:24.000000Z"},"created_at":null,"updated_at":null},{"id":3,"title":"Iste pariatur.","description":"Quidem voluptas inventore in. Est enim quia ut voluptatem. Deleniti quibusdam aliquam quia est. Consectetur in consequatur ratione sed et.","credit":1000,"image":"1694616077.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616077.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-14T05:46:24.000000Z","created_at":"2023-09-14T05:46:24.000000Z","updated_at":"2023-09-14T05:46:24.000000Z"},"created_at":null,"updated_at":null},{"id":4,"title":"Et eos ut assumenda.","description":"Aperiam rerum iusto asperiores aut iste ipsam sed quis. Eveniet sunt ipsum voluptatem voluptatem.","credit":1000,"image":"1694616078.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616078.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-14T05:46:24.000000Z","created_at":"2023-09-14T05:46:24.000000Z","updated_at":"2023-09-14T05:46:24.000000Z"},"created_at":null,"updated_at":null},{"id":5,"title":"qweqwe","description":"qweqwe","credit":12222,"image":"1694670411.jpg","image_url":"http:\/\/localhost\/images\/books\/1694670411.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-14T05:46:24.000000Z","created_at":"2023-09-14T05:46:24.000000Z","updated_at":"2023-09-14T05:46:24.000000Z"},"created_at":"2023-09-14T05:46:51.000000Z","updated_at":"2023-09-14T05:46:51.000000Z"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '58'
+          x-ratelimit-remaining: '56'
           vary: Origin
         description: null
         custom: []
@@ -78,7 +78,7 @@ endpoints:
         name: title
         description: 'Book title.'
         required: true
-        example: nihil
+        example: velit
         type: string
         enumValues: []
         custom: []
@@ -86,7 +86,7 @@ endpoints:
         name: description
         description: 'Description title.'
         required: true
-        example: 'Ab et provident quia autem consequatur.'
+        example: 'Sit et repellendus est vero debitis vel sed qui.'
         type: string
         enumValues: []
         custom: []
@@ -94,7 +94,7 @@ endpoints:
         name: credit
         description: 'Credit title.'
         required: true
-        example: 16
+        example: 13
         type: integer
         enumValues: []
         custom: []
@@ -106,10 +106,19 @@ endpoints:
         type: file
         enumValues: []
         custom: []
+      user_id:
+        name: user_id
+        description: 'Id user.'
+        required: true
+        example: 9
+        type: integer
+        enumValues: []
+        custom: []
     cleanBodyParameters:
-      title: nihil
-      description: 'Ab et provident quia autem consequatur.'
-      credit: 16
+      title: velit
+      description: 'Sit et repellendus est vero debitis vel sed qui.'
+      credit: 13
+      user_id: 9
     fileParameters:
       image: null
     responses: []
@@ -140,12 +149,12 @@ endpoints:
         name: book_id
         description: 'The ID of the book.'
         required: true
-        example: 5
+        example: 1
         type: integer
         enumValues: []
         custom: []
     cleanUrlParameters:
-      book_id: 5
+      book_id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -153,7 +162,7 @@ endpoints:
         name: title
         description: 'Book title.'
         required: false
-        example: praesentium
+        example: at
         type: string
         enumValues: []
         custom: []
@@ -161,7 +170,7 @@ endpoints:
         name: description
         description: 'Description title.'
         required: false
-        example: 'Consequatur sit non quod voluptatem.'
+        example: 'Harum sunt vitae impedit voluptates.'
         type: string
         enumValues: []
         custom: []
@@ -169,7 +178,7 @@ endpoints:
         name: credit
         description: 'Credit title.'
         required: false
-        example: 6
+        example: 12
         type: integer
         enumValues: []
         custom: []
@@ -182,9 +191,9 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: praesentium
-      description: 'Consequatur sit non quod voluptatem.'
-      credit: 6
+      title: at
+      description: 'Harum sunt vitae impedit voluptates.'
+      credit: 12
     fileParameters:
       image: null
     responses: []
@@ -215,12 +224,12 @@ endpoints:
         name: book_id
         description: 'The ID of the book.'
         required: true
-        example: 5
+        example: 1
         type: integer
         enumValues: []
         custom: []
     cleanUrlParameters:
-      book_id: 5
+      book_id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -259,12 +268,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":5,"title":"Modi sunt nesciunt.","description":"Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.","credit":1000,"image":"1694616074.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616074.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-13T15:43:38.000000Z","created_at":"2023-09-13T15:43:38.000000Z","updated_at":"2023-09-13T15:43:38.000000Z"},"created_at":null,"updated_at":null},{"id":6,"title":"Nihil vitae veniam.","description":"Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.","credit":1000,"image":"1694616076.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616076.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-13T15:43:38.000000Z","created_at":"2023-09-13T15:43:38.000000Z","updated_at":"2023-09-13T15:43:38.000000Z"},"created_at":null,"updated_at":null},{"id":7,"title":"Soluta autem.","description":"Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.","credit":1000,"image":"1694616077.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616077.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-13T15:43:38.000000Z","created_at":"2023-09-13T15:43:38.000000Z","updated_at":"2023-09-13T15:43:38.000000Z"},"created_at":null,"updated_at":null},{"id":8,"title":"Ratione fuga non.","description":"Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.","credit":1000,"image":"1694616078.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616078.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-13T15:43:38.000000Z","created_at":"2023-09-13T15:43:38.000000Z","updated_at":"2023-09-13T15:43:38.000000Z"},"created_at":null,"updated_at":null}]}'
+        content: '{"data":[{"id":1,"title":"Sunt assumenda.","description":"Quis quaerat voluptatem est natus fugiat. Quia qui at officiis aut nihil unde laudantium. Itaque facilis nulla tempore eveniet atque sint. Aut ea nobis laudantium voluptatum.","credit":1000,"image":"1694616074.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616074.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-14T05:46:24.000000Z","created_at":"2023-09-14T05:46:24.000000Z","updated_at":"2023-09-14T05:46:24.000000Z"},"created_at":null,"updated_at":null},{"id":2,"title":"Inventore officia.","description":"Ut rerum harum dignissimos qui. Iusto laborum culpa cumque maiores magnam. Velit quis dignissimos sed voluptatibus tempore quas illo.","credit":1000,"image":"1694616076.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616076.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-14T05:46:24.000000Z","created_at":"2023-09-14T05:46:24.000000Z","updated_at":"2023-09-14T05:46:24.000000Z"},"created_at":null,"updated_at":null},{"id":3,"title":"Iste pariatur.","description":"Quidem voluptas inventore in. Est enim quia ut voluptatem. Deleniti quibusdam aliquam quia est. Consectetur in consequatur ratione sed et.","credit":1000,"image":"1694616077.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616077.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-14T05:46:24.000000Z","created_at":"2023-09-14T05:46:24.000000Z","updated_at":"2023-09-14T05:46:24.000000Z"},"created_at":null,"updated_at":null},{"id":4,"title":"Et eos ut assumenda.","description":"Aperiam rerum iusto asperiores aut iste ipsam sed quis. Eveniet sunt ipsum voluptatem voluptatem.","credit":1000,"image":"1694616078.jpg","image_url":"http:\/\/localhost\/images\/books\/1694616078.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-14T05:46:24.000000Z","created_at":"2023-09-14T05:46:24.000000Z","updated_at":"2023-09-14T05:46:24.000000Z"},"created_at":null,"updated_at":null},{"id":5,"title":"qweqwe","description":"qweqwe","credit":12222,"image":"1694670411.jpg","image_url":"http:\/\/localhost\/images\/books\/1694670411.jpg","user_id":1,"user":{"id":1,"name":"Yoda","email":"yoda@example.com","email_verified_at":"2023-09-14T05:46:24.000000Z","created_at":"2023-09-14T05:46:24.000000Z","updated_at":"2023-09-14T05:46:24.000000Z"},"created_at":"2023-09-14T05:46:51.000000Z","updated_at":"2023-09-14T05:46:51.000000Z"},{"id":9,"title":"aaaaa","description":"aaaa","credit":123,"image":"1694671530.jpg","image_url":"http:\/\/localhost\/images\/books\/1694671530.jpg","user_id":3,"user":{"id":3,"name":"allen","email":"allen@example.com","email_verified_at":null,"created_at":"2023-09-14T06:04:47.000000Z","updated_at":"2023-09-14T06:04:47.000000Z"},"created_at":"2023-09-14T06:05:30.000000Z","updated_at":"2023-09-14T06:05:36.000000Z"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
+          x-ratelimit-remaining: '55'
           vary: Origin
         description: null
         custom: []

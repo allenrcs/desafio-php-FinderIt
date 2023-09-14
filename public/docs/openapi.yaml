@@ -11,7 +11,7 @@ paths:
     get:
       summary: 'Get books.'
       operationId: getBooks
-      description: 'This endpoint provides a list of books'
+      description: 'this endpoint provides the books of a user'
       parameters:
         -
           in: query
@@ -33,9 +33,9 @@ paths:
                 example:
                   data:
                     -
-                      id: 5
-                      title: 'Modi sunt nesciunt.'
-                      description: 'Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.'
+                      id: 1
+                      title: 'Sunt assumenda.'
+                      description: 'Quis quaerat voluptatem est natus fugiat. Quia qui at officiis aut nihil unde laudantium. Itaque facilis nulla tempore eveniet atque sint. Aut ea nobis laudantium voluptatum.'
                       credit: 1000
                       image: 1694616074.jpg
                       image_url: 'http://localhost/images/books/1694616074.jpg'
@@ -44,15 +44,15 @@ paths:
                         id: 1
                         name: Yoda
                         email: yoda@example.com
-                        email_verified_at: '2023-09-13T15:43:38.000000Z'
-                        created_at: '2023-09-13T15:43:38.000000Z'
-                        updated_at: '2023-09-13T15:43:38.000000Z'
+                        email_verified_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:24.000000Z'
+                        updated_at: '2023-09-14T05:46:24.000000Z'
                       created_at: null
                       updated_at: null
                     -
-                      id: 6
-                      title: 'Nihil vitae veniam.'
-                      description: 'Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.'
+                      id: 2
+                      title: 'Inventore officia.'
+                      description: 'Ut rerum harum dignissimos qui. Iusto laborum culpa cumque maiores magnam. Velit quis dignissimos sed voluptatibus tempore quas illo.'
                       credit: 1000
                       image: 1694616076.jpg
                       image_url: 'http://localhost/images/books/1694616076.jpg'
@@ -61,15 +61,15 @@ paths:
                         id: 1
                         name: Yoda
                         email: yoda@example.com
-                        email_verified_at: '2023-09-13T15:43:38.000000Z'
-                        created_at: '2023-09-13T15:43:38.000000Z'
-                        updated_at: '2023-09-13T15:43:38.000000Z'
+                        email_verified_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:24.000000Z'
+                        updated_at: '2023-09-14T05:46:24.000000Z'
                       created_at: null
                       updated_at: null
                     -
-                      id: 7
-                      title: 'Soluta autem.'
-                      description: 'Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.'
+                      id: 3
+                      title: 'Iste pariatur.'
+                      description: 'Quidem voluptas inventore in. Est enim quia ut voluptatem. Deleniti quibusdam aliquam quia est. Consectetur in consequatur ratione sed et.'
                       credit: 1000
                       image: 1694616077.jpg
                       image_url: 'http://localhost/images/books/1694616077.jpg'
@@ -78,15 +78,15 @@ paths:
                         id: 1
                         name: Yoda
                         email: yoda@example.com
-                        email_verified_at: '2023-09-13T15:43:38.000000Z'
-                        created_at: '2023-09-13T15:43:38.000000Z'
-                        updated_at: '2023-09-13T15:43:38.000000Z'
+                        email_verified_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:24.000000Z'
+                        updated_at: '2023-09-14T05:46:24.000000Z'
                       created_at: null
                       updated_at: null
                     -
-                      id: 8
-                      title: 'Ratione fuga non.'
-                      description: 'Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.'
+                      id: 4
+                      title: 'Et eos ut assumenda.'
+                      description: 'Aperiam rerum iusto asperiores aut iste ipsam sed quis. Eveniet sunt ipsum voluptatem voluptatem.'
                       credit: 1000
                       image: 1694616078.jpg
                       image_url: 'http://localhost/images/books/1694616078.jpg'
@@ -95,19 +95,36 @@ paths:
                         id: 1
                         name: Yoda
                         email: yoda@example.com
-                        email_verified_at: '2023-09-13T15:43:38.000000Z'
-                        created_at: '2023-09-13T15:43:38.000000Z'
-                        updated_at: '2023-09-13T15:43:38.000000Z'
+                        email_verified_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:24.000000Z'
+                        updated_at: '2023-09-14T05:46:24.000000Z'
                       created_at: null
                       updated_at: null
+                    -
+                      id: 5
+                      title: qweqwe
+                      description: qweqwe
+                      credit: 12222
+                      image: 1694670411.jpg
+                      image_url: 'http://localhost/images/books/1694670411.jpg'
+                      user_id: 1
+                      user:
+                        id: 1
+                        name: Yoda
+                        email: yoda@example.com
+                        email_verified_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:24.000000Z'
+                        updated_at: '2023-09-14T05:46:24.000000Z'
+                      created_at: '2023-09-14T05:46:51.000000Z'
+                      updated_at: '2023-09-14T05:46:51.000000Z'
                 properties:
                   data:
                     type: array
                     example:
                       -
-                        id: 5
-                        title: 'Modi sunt nesciunt.'
-                        description: 'Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.'
+                        id: 1
+                        title: 'Sunt assumenda.'
+                        description: 'Quis quaerat voluptatem est natus fugiat. Quia qui at officiis aut nihil unde laudantium. Itaque facilis nulla tempore eveniet atque sint. Aut ea nobis laudantium voluptatum.'
                         credit: 1000
                         image: 1694616074.jpg
                         image_url: 'http://localhost/images/books/1694616074.jpg'
@@ -116,15 +133,15 @@ paths:
                           id: 1
                           name: Yoda
                           email: yoda@example.com
-                          email_verified_at: '2023-09-13T15:43:38.000000Z'
-                          created_at: '2023-09-13T15:43:38.000000Z'
-                          updated_at: '2023-09-13T15:43:38.000000Z'
+                          email_verified_at: '2023-09-14T05:46:24.000000Z'
+                          created_at: '2023-09-14T05:46:24.000000Z'
+                          updated_at: '2023-09-14T05:46:24.000000Z'
                         created_at: null
                         updated_at: null
                       -
-                        id: 6
-                        title: 'Nihil vitae veniam.'
-                        description: 'Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.'
+                        id: 2
+                        title: 'Inventore officia.'
+                        description: 'Ut rerum harum dignissimos qui. Iusto laborum culpa cumque maiores magnam. Velit quis dignissimos sed voluptatibus tempore quas illo.'
                         credit: 1000
                         image: 1694616076.jpg
                         image_url: 'http://localhost/images/books/1694616076.jpg'
@@ -133,15 +150,15 @@ paths:
                           id: 1
                           name: Yoda
                           email: yoda@example.com
-                          email_verified_at: '2023-09-13T15:43:38.000000Z'
-                          created_at: '2023-09-13T15:43:38.000000Z'
-                          updated_at: '2023-09-13T15:43:38.000000Z'
+                          email_verified_at: '2023-09-14T05:46:24.000000Z'
+                          created_at: '2023-09-14T05:46:24.000000Z'
+                          updated_at: '2023-09-14T05:46:24.000000Z'
                         created_at: null
                         updated_at: null
                       -
-                        id: 7
-                        title: 'Soluta autem.'
-                        description: 'Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.'
+                        id: 3
+                        title: 'Iste pariatur.'
+                        description: 'Quidem voluptas inventore in. Est enim quia ut voluptatem. Deleniti quibusdam aliquam quia est. Consectetur in consequatur ratione sed et.'
                         credit: 1000
                         image: 1694616077.jpg
                         image_url: 'http://localhost/images/books/1694616077.jpg'
@@ -150,15 +167,15 @@ paths:
                           id: 1
                           name: Yoda
                           email: yoda@example.com
-                          email_verified_at: '2023-09-13T15:43:38.000000Z'
-                          created_at: '2023-09-13T15:43:38.000000Z'
-                          updated_at: '2023-09-13T15:43:38.000000Z'
+                          email_verified_at: '2023-09-14T05:46:24.000000Z'
+                          created_at: '2023-09-14T05:46:24.000000Z'
+                          updated_at: '2023-09-14T05:46:24.000000Z'
                         created_at: null
                         updated_at: null
                       -
-                        id: 8
-                        title: 'Ratione fuga non.'
-                        description: 'Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.'
+                        id: 4
+                        title: 'Et eos ut assumenda.'
+                        description: 'Aperiam rerum iusto asperiores aut iste ipsam sed quis. Eveniet sunt ipsum voluptatem voluptatem.'
                         credit: 1000
                         image: 1694616078.jpg
                         image_url: 'http://localhost/images/books/1694616078.jpg'
@@ -167,23 +184,40 @@ paths:
                           id: 1
                           name: Yoda
                           email: yoda@example.com
-                          email_verified_at: '2023-09-13T15:43:38.000000Z'
-                          created_at: '2023-09-13T15:43:38.000000Z'
-                          updated_at: '2023-09-13T15:43:38.000000Z'
+                          email_verified_at: '2023-09-14T05:46:24.000000Z'
+                          created_at: '2023-09-14T05:46:24.000000Z'
+                          updated_at: '2023-09-14T05:46:24.000000Z'
                         created_at: null
                         updated_at: null
+                      -
+                        id: 5
+                        title: qweqwe
+                        description: qweqwe
+                        credit: 12222
+                        image: 1694670411.jpg
+                        image_url: 'http://localhost/images/books/1694670411.jpg'
+                        user_id: 1
+                        user:
+                          id: 1
+                          name: Yoda
+                          email: yoda@example.com
+                          email_verified_at: '2023-09-14T05:46:24.000000Z'
+                          created_at: '2023-09-14T05:46:24.000000Z'
+                          updated_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:51.000000Z'
+                        updated_at: '2023-09-14T05:46:51.000000Z'
                     items:
                       type: object
                       properties:
                         id:
                           type: integer
-                          example: 5
+                          example: 1
                         title:
                           type: string
-                          example: 'Modi sunt nesciunt.'
+                          example: 'Sunt assumenda.'
                         description:
                           type: string
-                          example: 'Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.'
+                          example: 'Quis quaerat voluptatem est natus fugiat. Quia qui at officiis aut nihil unde laudantium. Itaque facilis nulla tempore eveniet atque sint. Aut ea nobis laudantium voluptatum.'
                         credit:
                           type: integer
                           example: 1000
@@ -210,13 +244,13 @@ paths:
                               example: yoda@example.com
                             email_verified_at:
                               type: string
-                              example: '2023-09-13T15:43:38.000000Z'
+                              example: '2023-09-14T05:46:24.000000Z'
                             created_at:
                               type: string
-                              example: '2023-09-13T15:43:38.000000Z'
+                              example: '2023-09-14T05:46:24.000000Z'
                             updated_at:
                               type: string
-                              example: '2023-09-13T15:43:38.000000Z'
+                              example: '2023-09-14T05:46:24.000000Z'
                         created_at:
                           type: string
                           example: null
@@ -243,24 +277,29 @@ paths:
                 title:
                   type: string
                   description: 'Book title.'
-                  example: nihil
+                  example: velit
                 description:
                   type: string
                   description: 'Description title.'
-                  example: 'Ab et provident quia autem consequatur.'
+                  example: 'Sit et repellendus est vero debitis vel sed qui.'
                 credit:
                   type: integer
                   description: 'Credit title.'
-                  example: 16
+                  example: 13
                 image:
                   type: string
                   format: binary
                   description: 'Cover image.'
+                user_id:
+                  type: integer
+                  description: 'Id user.'
+                  example: 9
               required:
                 - title
                 - description
                 - credit
                 - image
+                - user_id
   '/api/books/{book_id}':
     put:
       summary: 'Update Book.'
@@ -280,15 +319,15 @@ paths:
                 title:
                   type: string
                   description: 'Book title.'
-                  example: praesentium
+                  example: at
                 description:
                   type: string
                   description: 'Description title.'
-                  example: 'Consequatur sit non quod voluptatem.'
+                  example: 'Harum sunt vitae impedit voluptates.'
                 credit:
                   type: integer
                   description: 'Credit title.'
-                  example: 6
+                  example: 12
                 image:
                   type: string
                   format: binary
@@ -306,7 +345,7 @@ paths:
         in: path
         name: book_id
         description: 'The ID of the book.'
-        example: 5
+        example: 1
         required: true
         schema:
           type: integer
@@ -326,9 +365,9 @@ paths:
                 example:
                   data:
                     -
-                      id: 5
-                      title: 'Modi sunt nesciunt.'
-                      description: 'Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.'
+                      id: 1
+                      title: 'Sunt assumenda.'
+                      description: 'Quis quaerat voluptatem est natus fugiat. Quia qui at officiis aut nihil unde laudantium. Itaque facilis nulla tempore eveniet atque sint. Aut ea nobis laudantium voluptatum.'
                       credit: 1000
                       image: 1694616074.jpg
                       image_url: 'http://localhost/images/books/1694616074.jpg'
@@ -337,15 +376,15 @@ paths:
                         id: 1
                         name: Yoda
                         email: yoda@example.com
-                        email_verified_at: '2023-09-13T15:43:38.000000Z'
-                        created_at: '2023-09-13T15:43:38.000000Z'
-                        updated_at: '2023-09-13T15:43:38.000000Z'
+                        email_verified_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:24.000000Z'
+                        updated_at: '2023-09-14T05:46:24.000000Z'
                       created_at: null
                       updated_at: null
                     -
-                      id: 6
-                      title: 'Nihil vitae veniam.'
-                      description: 'Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.'
+                      id: 2
+                      title: 'Inventore officia.'
+                      description: 'Ut rerum harum dignissimos qui. Iusto laborum culpa cumque maiores magnam. Velit quis dignissimos sed voluptatibus tempore quas illo.'
                       credit: 1000
                       image: 1694616076.jpg
                       image_url: 'http://localhost/images/books/1694616076.jpg'
@@ -354,15 +393,15 @@ paths:
                         id: 1
                         name: Yoda
                         email: yoda@example.com
-                        email_verified_at: '2023-09-13T15:43:38.000000Z'
-                        created_at: '2023-09-13T15:43:38.000000Z'
-                        updated_at: '2023-09-13T15:43:38.000000Z'
+                        email_verified_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:24.000000Z'
+                        updated_at: '2023-09-14T05:46:24.000000Z'
                       created_at: null
                       updated_at: null
                     -
-                      id: 7
-                      title: 'Soluta autem.'
-                      description: 'Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.'
+                      id: 3
+                      title: 'Iste pariatur.'
+                      description: 'Quidem voluptas inventore in. Est enim quia ut voluptatem. Deleniti quibusdam aliquam quia est. Consectetur in consequatur ratione sed et.'
                       credit: 1000
                       image: 1694616077.jpg
                       image_url: 'http://localhost/images/books/1694616077.jpg'
@@ -371,15 +410,15 @@ paths:
                         id: 1
                         name: Yoda
                         email: yoda@example.com
-                        email_verified_at: '2023-09-13T15:43:38.000000Z'
-                        created_at: '2023-09-13T15:43:38.000000Z'
-                        updated_at: '2023-09-13T15:43:38.000000Z'
+                        email_verified_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:24.000000Z'
+                        updated_at: '2023-09-14T05:46:24.000000Z'
                       created_at: null
                       updated_at: null
                     -
-                      id: 8
-                      title: 'Ratione fuga non.'
-                      description: 'Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.'
+                      id: 4
+                      title: 'Et eos ut assumenda.'
+                      description: 'Aperiam rerum iusto asperiores aut iste ipsam sed quis. Eveniet sunt ipsum voluptatem voluptatem.'
                       credit: 1000
                       image: 1694616078.jpg
                       image_url: 'http://localhost/images/books/1694616078.jpg'
@@ -388,19 +427,53 @@ paths:
                         id: 1
                         name: Yoda
                         email: yoda@example.com
-                        email_verified_at: '2023-09-13T15:43:38.000000Z'
-                        created_at: '2023-09-13T15:43:38.000000Z'
-                        updated_at: '2023-09-13T15:43:38.000000Z'
+                        email_verified_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:24.000000Z'
+                        updated_at: '2023-09-14T05:46:24.000000Z'
                       created_at: null
                       updated_at: null
+                    -
+                      id: 5
+                      title: qweqwe
+                      description: qweqwe
+                      credit: 12222
+                      image: 1694670411.jpg
+                      image_url: 'http://localhost/images/books/1694670411.jpg'
+                      user_id: 1
+                      user:
+                        id: 1
+                        name: Yoda
+                        email: yoda@example.com
+                        email_verified_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:24.000000Z'
+                        updated_at: '2023-09-14T05:46:24.000000Z'
+                      created_at: '2023-09-14T05:46:51.000000Z'
+                      updated_at: '2023-09-14T05:46:51.000000Z'
+                    -
+                      id: 9
+                      title: aaaaa
+                      description: aaaa
+                      credit: 123
+                      image: 1694671530.jpg
+                      image_url: 'http://localhost/images/books/1694671530.jpg'
+                      user_id: 3
+                      user:
+                        id: 3
+                        name: allen
+                        email: allen@example.com
+                        email_verified_at: null
+                        created_at: '2023-09-14T06:04:47.000000Z'
+                        updated_at: '2023-09-14T06:04:47.000000Z'
+                      created_at: '2023-09-14T06:05:30.000000Z'
+                      updated_at: '2023-09-14T06:05:36.000000Z'
                 properties:
                   data:
                     type: array
                     example:
                       -
-                        id: 5
-                        title: 'Modi sunt nesciunt.'
-                        description: 'Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.'
+                        id: 1
+                        title: 'Sunt assumenda.'
+                        description: 'Quis quaerat voluptatem est natus fugiat. Quia qui at officiis aut nihil unde laudantium. Itaque facilis nulla tempore eveniet atque sint. Aut ea nobis laudantium voluptatum.'
                         credit: 1000
                         image: 1694616074.jpg
                         image_url: 'http://localhost/images/books/1694616074.jpg'
@@ -409,15 +482,15 @@ paths:
                           id: 1
                           name: Yoda
                           email: yoda@example.com
-                          email_verified_at: '2023-09-13T15:43:38.000000Z'
-                          created_at: '2023-09-13T15:43:38.000000Z'
-                          updated_at: '2023-09-13T15:43:38.000000Z'
+                          email_verified_at: '2023-09-14T05:46:24.000000Z'
+                          created_at: '2023-09-14T05:46:24.000000Z'
+                          updated_at: '2023-09-14T05:46:24.000000Z'
                         created_at: null
                         updated_at: null
                       -
-                        id: 6
-                        title: 'Nihil vitae veniam.'
-                        description: 'Dolore deleniti voluptates omnis eos voluptatum quod perspiciatis. Ut ea eos voluptates perferendis. Eius sit deleniti nostrum modi dolorum. Eveniet neque est qui qui optio ipsum ipsam.'
+                        id: 2
+                        title: 'Inventore officia.'
+                        description: 'Ut rerum harum dignissimos qui. Iusto laborum culpa cumque maiores magnam. Velit quis dignissimos sed voluptatibus tempore quas illo.'
                         credit: 1000
                         image: 1694616076.jpg
                         image_url: 'http://localhost/images/books/1694616076.jpg'
@@ -426,15 +499,15 @@ paths:
                           id: 1
                           name: Yoda
                           email: yoda@example.com
-                          email_verified_at: '2023-09-13T15:43:38.000000Z'
-                          created_at: '2023-09-13T15:43:38.000000Z'
-                          updated_at: '2023-09-13T15:43:38.000000Z'
+                          email_verified_at: '2023-09-14T05:46:24.000000Z'
+                          created_at: '2023-09-14T05:46:24.000000Z'
+                          updated_at: '2023-09-14T05:46:24.000000Z'
                         created_at: null
                         updated_at: null
                       -
-                        id: 7
-                        title: 'Soluta autem.'
-                        description: 'Ea eos architecto aut illum. Voluptatem omnis nam in odit. Magni natus dolores et aut et. Eaque earum nostrum ad aliquid et et dolore dolorem.'
+                        id: 3
+                        title: 'Iste pariatur.'
+                        description: 'Quidem voluptas inventore in. Est enim quia ut voluptatem. Deleniti quibusdam aliquam quia est. Consectetur in consequatur ratione sed et.'
                         credit: 1000
                         image: 1694616077.jpg
                         image_url: 'http://localhost/images/books/1694616077.jpg'
@@ -443,15 +516,15 @@ paths:
                           id: 1
                           name: Yoda
                           email: yoda@example.com
-                          email_verified_at: '2023-09-13T15:43:38.000000Z'
-                          created_at: '2023-09-13T15:43:38.000000Z'
-                          updated_at: '2023-09-13T15:43:38.000000Z'
+                          email_verified_at: '2023-09-14T05:46:24.000000Z'
+                          created_at: '2023-09-14T05:46:24.000000Z'
+                          updated_at: '2023-09-14T05:46:24.000000Z'
                         created_at: null
                         updated_at: null
                       -
-                        id: 8
-                        title: 'Ratione fuga non.'
-                        description: 'Quia quia est voluptate magni ipsum nam expedita. Rem voluptas deserunt quo occaecati voluptas dolor. Doloribus minus quae laudantium cumque quisquam eum rerum. Sit nisi nam tempora.'
+                        id: 4
+                        title: 'Et eos ut assumenda.'
+                        description: 'Aperiam rerum iusto asperiores aut iste ipsam sed quis. Eveniet sunt ipsum voluptatem voluptatem.'
                         credit: 1000
                         image: 1694616078.jpg
                         image_url: 'http://localhost/images/books/1694616078.jpg'
@@ -460,23 +533,57 @@ paths:
                           id: 1
                           name: Yoda
                           email: yoda@example.com
-                          email_verified_at: '2023-09-13T15:43:38.000000Z'
-                          created_at: '2023-09-13T15:43:38.000000Z'
-                          updated_at: '2023-09-13T15:43:38.000000Z'
+                          email_verified_at: '2023-09-14T05:46:24.000000Z'
+                          created_at: '2023-09-14T05:46:24.000000Z'
+                          updated_at: '2023-09-14T05:46:24.000000Z'
                         created_at: null
                         updated_at: null
+                      -
+                        id: 5
+                        title: qweqwe
+                        description: qweqwe
+                        credit: 12222
+                        image: 1694670411.jpg
+                        image_url: 'http://localhost/images/books/1694670411.jpg'
+                        user_id: 1
+                        user:
+                          id: 1
+                          name: Yoda
+                          email: yoda@example.com
+                          email_verified_at: '2023-09-14T05:46:24.000000Z'
+                          created_at: '2023-09-14T05:46:24.000000Z'
+                          updated_at: '2023-09-14T05:46:24.000000Z'
+                        created_at: '2023-09-14T05:46:51.000000Z'
+                        updated_at: '2023-09-14T05:46:51.000000Z'
+                      -
+                        id: 9
+                        title: aaaaa
+                        description: aaaa
+                        credit: 123
+                        image: 1694671530.jpg
+                        image_url: 'http://localhost/images/books/1694671530.jpg'
+                        user_id: 3
+                        user:
+                          id: 3
+                          name: allen
+                          email: allen@example.com
+                          email_verified_at: null
+                          created_at: '2023-09-14T06:04:47.000000Z'
+                          updated_at: '2023-09-14T06:04:47.000000Z'
+                        created_at: '2023-09-14T06:05:30.000000Z'
+                        updated_at: '2023-09-14T06:05:36.000000Z'
                     items:
                       type: object
                       properties:
                         id:
                           type: integer
-                          example: 5
+                          example: 1
                         title:
                           type: string
-                          example: 'Modi sunt nesciunt.'
+                          example: 'Sunt assumenda.'
                         description:
                           type: string
-                          example: 'Dolor ipsa consequatur culpa quaerat dolores quas dignissimos. Eos qui a asperiores veritatis cumque. Et nam non eos quasi aut est. Qui officiis quod quis quae minus in quas vel.'
+                          example: 'Quis quaerat voluptatem est natus fugiat. Quia qui at officiis aut nihil unde laudantium. Itaque facilis nulla tempore eveniet atque sint. Aut ea nobis laudantium voluptatum.'
                         credit:
                           type: integer
                           example: 1000
@@ -503,13 +610,13 @@ paths:
                               example: yoda@example.com
                             email_verified_at:
                               type: string
-                              example: '2023-09-13T15:43:38.000000Z'
+                              example: '2023-09-14T05:46:24.000000Z'
                             created_at:
                               type: string
-                              example: '2023-09-13T15:43:38.000000Z'
+                              example: '2023-09-14T05:46:24.000000Z'
                             updated_at:
                               type: string
-                              example: '2023-09-13T15:43:38.000000Z'
+                              example: '2023-09-14T05:46:24.000000Z'
                         created_at:
                           type: string
                           example: null
