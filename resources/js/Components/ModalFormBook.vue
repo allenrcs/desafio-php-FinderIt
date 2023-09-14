@@ -19,6 +19,7 @@
         credit: '',
         urlImage: ''
     })
+    const userID = localStorage.getItem('UserId');
 
     onMounted(() => {
         title.value = props.action === 'create' ? 'Add Book' : 'Update Book';
@@ -41,7 +42,8 @@
                 title: form.title,
                 description: form.description,
                 credit: form.credit,
-                image: img
+                image: img,
+                user_id: userID
         },
         {
             headers: {
@@ -71,9 +73,8 @@
         document.querySelector('#close'+props.action).click();
     }
 
-    const imagenSeleccionada = (event) => {
+    const selectedImage = (event) => {
         img = event.target.files[0];
-        console.log(img);
     }
 </script>
 
@@ -109,7 +110,7 @@
                         </div>
 
                         <div class="input-group mb-3">
-                            <input type="file" v-on="form.urlImage" accept=".png, .jpg" @change="imagenSeleccionada($event)">
+                            <input type="file" v-on="form.urlImage" accept=".png, .jpg" @change="selectedImage($event)">
                         </div>
 
                         <div class="d-grid-mx-auto">

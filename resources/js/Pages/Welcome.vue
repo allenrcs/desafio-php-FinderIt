@@ -95,6 +95,10 @@ const filteredBooks = computed(() => {
 
 <style>
 
+.table {
+    min-width: 100px;
+}
+
 .filter-input {
     margin-bottom: 1rem;
 }

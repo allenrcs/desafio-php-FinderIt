@@ -14,17 +14,19 @@ defineProps({
 });
 
 const form = useForm({
-    email: 'yoda@example.com',
-    password: '12345678',
+    email: '',
+    password: '',
     remember: false,
 });
-    
 
+localStorage.removeItem('Token');
+localStorage.removeItem('UserId');
 const submit = async () => {
     const response = await axios.get('/sanctum/token', {
         params: {email: form.email, password: form.password}
     });
     localStorage.setItem('Token', response.data.accessToken);
+    localStorage.setItem('UserId', response.data.userId);
 
     form.post(route('login'), {
         onFinish: () => form.reset('password'),
