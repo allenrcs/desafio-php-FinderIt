@@ -37,7 +37,7 @@ class IndexBookTest extends TestCase
         );
 
         // Realiza una solicitud GET al endpoint de listado de libros
-        $response = $this->get('/api/books');
+        $response = $this->get('/api/books?'."user_id=$user->id");
 
         // Verifica que la respuesta sea exitosa
         $response->assertStatus(200);
