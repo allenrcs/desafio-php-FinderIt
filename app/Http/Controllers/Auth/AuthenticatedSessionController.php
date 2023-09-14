@@ -17,7 +17,11 @@ class AuthenticatedSessionController extends Controller
 {
 
     /**
-     * Display the login view.
+     * Get user session token.
+     *
+     * @return JsonResponse
+     *
+     * @response 200
      */
     public function generateSessionToken(Request $request)
     {
@@ -33,7 +37,8 @@ class AuthenticatedSessionController extends Controller
 
         return response()
             ->json([
-                'accessToken' => $token
+                'accessToken' => $token,
+                'userId' => $user->id
             ]);
     }
 

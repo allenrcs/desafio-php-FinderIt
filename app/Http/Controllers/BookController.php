@@ -21,11 +21,13 @@ class BookController extends Controller
      *
      * @authenticated
      *
+     * @queryParam user_id int Id user. Example: 1
+     * 
      * @return BookResource
      */
     public function index(Request $request)
     {
-        $userId = $request->user()->id;
+        $userId = $request->user_id;
 
         $books = Book::getBooksByUser($userId);
 
@@ -65,13 +67,14 @@ class BookController extends Controller
      * @BodyParam description string required Description title.
      * @BodyParam credit int required Credit title.
      * @BodyParam image file required Cover image.
+     * @BodyParam user_id int required Id user.
      *
      * @return BookResource
      */
     public function store(StoreBookRequest $request)
     {
         $data = $request->validated();
-        $data['user_id'] = $request->user()->id;
+        $data['user_id'] = $request->user_id;
 
         if ($request->hasFile('image')) {
             $data['image'] = $this->uploadImage($request->file('image'));
